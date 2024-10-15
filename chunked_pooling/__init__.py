@@ -19,6 +19,8 @@ def chunk_by_sentences(input_text: str, tokenizer: callable):
             or token_ids[i + 1] == sep_id
         )
     ]
+    if len(chunk_positions) == 0 or chunk_positions[-1][1] < len(input_text):
+        chunk_positions.append((len(token_ids) - 1, len(input_text)))
     chunks = [
         input_text[x[1] : y[1]]
         for x, y in zip([(1, 0)] + chunk_positions[:-1], chunk_positions)

@@ -7,12 +7,13 @@
 ### Подготовка к запуску ноутбуков:
 
 * Установите пакеты из [requirements.txt](requirements.txt).
-* Скачайте [данные](https://drive.google.com/file/d/1F07Hjit8OAGcKjJcZ4CwFrlOWhhkqXi1/view?usp=sharing) и распакуйте в директорию [ai-forever-ria-news-retrieval](ai-forever-ria-news-retrieval). Если хотите пропустить крайне ресурсозатратный этап в [data-to-emb.ipynb](data-to-emb.ipynb), то можете скачать [данные с готовыми эмбеддингами](#)
+* Скачайте [данные](https://drive.google.com/file/d/1F07Hjit8OAGcKjJcZ4CwFrlOWhhkqXi1/view?usp=sharing) и распакуйте в директорию [ai-forever-ria-news-retrieval](ai-forever-ria-news-retrieval). Если хотите пропустить крайне ресурсозатратный этап в [data-to-emb.ipynb](data-to-emb.ipynb), то можете скачать [данные с готовыми эмбеддингами](https://sharedby.blomp.com/7E6IJ6) (осторожно, архив весит 27,4 ГБ, а в распакованном виде 45,4 ГБ).
 
 ### Порядок просмотра/запуска ноутбуков:
 
 * [data-info.ipynb](data-info.ipynb) — ноутбук для понимания, что из себя представляет датасет
 * [data-to-emb.ipynb](data-to-emb.ipynb) — ноутбук для генерации эмбеддингов фрагментов текстов и запросов
+* [emb-fix-record.ipynb](emb-fix-record.ipynb) — ноутбук для исправления особенности датасета
 * [emb-to-qdrant.ipynb](emb-to-qdrant.ipynb) — ноутбук для занесения эмбеддингов фрагментов текстов в векторную БД qdrant
 * [qdrant-to-stats.ipynb](qdrant-to-stats.ipynb) — ноутбук для измерения качества поиска по фрагментам текстов/текстам
 
